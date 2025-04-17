@@ -1,17 +1,4 @@
 document.addEventListener("DOMContentLoaded", function(){
-    
-    // Pessoas
-    document.getElementById("pessoas").addEventListener("click", function falar() {
-        
-        let pessoas = document.getElementById("pessoas");
-        let fala = "pessoas";
-
-        // Speech to text
-        const vozGoogle = window.speechSynthesis.getVoices()[0]
-        const config_Fala = new SpeechSynthesisUtterance(fala);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
 
     document.getElementById("eu").addEventListener("click", function falar() {
         
