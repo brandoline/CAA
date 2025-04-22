@@ -1,4 +1,28 @@
 document.addEventListener("DOMContentLoaded", function(){
+    
+    window.speechSynthesis.onvoiceschanged = () => {
+        const vozes = window.speechSynthesis.getVoices();
+        let vozEscolhida;
+
+        for(i = 0; i < vozes.length; i++){
+            if(vozes[i].lang === "pt-BR"){
+                vozEscolhida = vozes[i];
+                break;
+            }
+        }
+        console.log(vozEscolhida);
+    
+    // Pessoas
+    document.getElementById("pessoas").addEventListener("click", function falar() {
+        
+        let pessoas = document.getElementById("pessoas");
+
+        // Speech to text
+        const vozGoogle = vozEscolhida;
+        const config_Fala = new SpeechSynthesisUtterance(pessoas);
+        config_Fala.voice = vozGoogle;
+        window.speechSynthesis.speak(config_Fala);
+    })
 
     document.getElementById("eu").addEventListener("click", function falar() {
         
@@ -6,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(){
         let alt = imagem.alt;
 
         // Speech to text
-        const vozGoogle = window.speechSynthesis.getVoices()[0]
+        const vozGoogle = vozEscolhida;
         const config_Fala = new SpeechSynthesisUtterance(alt);
         config_Fala.voice = vozGoogle;
         window.speechSynthesis.speak(config_Fala);
@@ -18,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function(){
         let alt = imagem.alt;
 
         // Speech to text
-        const vozGoogle = window.speechSynthesis.getVoices()[0]
+        const vozGoogle = vozEscolhida;
         const config_Fala = new SpeechSynthesisUtterance(alt);
         config_Fala.voice = vozGoogle;
         window.speechSynthesis.speak(config_Fala);
@@ -30,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function(){
         let alt = imagem.alt;
 
         // Speech to text
-        const vozGoogle = window.speechSynthesis.getVoices()[0]
+        const vozGoogle = vozEscolhida;
         const config_Fala = new SpeechSynthesisUtterance(alt);
         config_Fala.voice = vozGoogle;
         window.speechSynthesis.speak(config_Fala);
@@ -42,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function(){
         let alt = imagem.alt;
 
         // Speech to text
-        const vozGoogle = window.speechSynthesis.getVoices()[0]
+        const vozGoogle = vozEscolhida;
         const config_Fala = new SpeechSynthesisUtterance(alt);
         config_Fala.voice = vozGoogle;
         window.speechSynthesis.speak(config_Fala);
@@ -54,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function(){
         let alt = imagem.alt;
 
         // Speech to text
-        const vozGoogle = window.speechSynthesis.getVoices()[0]
+        const vozGoogle = vozEscolhida;
         const config_Fala = new SpeechSynthesisUtterance(alt);
         config_Fala.voice = vozGoogle;
         window.speechSynthesis.speak(config_Fala);
@@ -66,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function(){
         let alt = imagem.alt;
 
         // Speech to text
-        const vozGoogle = window.speechSynthesis.getVoices()[0]
+        const vozGoogle = vozEscolhida;
         const config_Fala = new SpeechSynthesisUtterance(alt);
         config_Fala.voice = vozGoogle;
         window.speechSynthesis.speak(config_Fala);
@@ -78,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function(){
         let alt = imagem.alt;
 
         // Speech to text
-        const vozGoogle = window.speechSynthesis.getVoices()[0]
+        const vozGoogle = vozEscolhida;
         const config_Fala = new SpeechSynthesisUtterance(alt);
         config_Fala.voice = vozGoogle;
         window.speechSynthesis.speak(config_Fala);
@@ -90,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function(){
         let alt = imagem.alt;
 
         // Speech to text
-        const vozGoogle = window.speechSynthesis.getVoices()[0]
+        const vozGoogle = vozEscolhida;
         const config_Fala = new SpeechSynthesisUtterance(alt);
         config_Fala.voice = vozGoogle;
         window.speechSynthesis.speak(config_Fala);
@@ -102,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function(){
         let alt = imagem.alt;
 
         // Speech to text
-        const vozGoogle = window.speechSynthesis.getVoices()[0]
+        const vozGoogle = vozEscolhida;
         const config_Fala = new SpeechSynthesisUtterance(alt);
         config_Fala.voice = vozGoogle;
         window.speechSynthesis.speak(config_Fala);
@@ -114,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function(){
         let alt = imagem.alt;
 
         // Speech to text
-        const vozGoogle = window.speechSynthesis.getVoices()[0]
+        const vozGoogle = vozEscolhida;
         const config_Fala = new SpeechSynthesisUtterance(alt);
         config_Fala.voice = vozGoogle;
         window.speechSynthesis.speak(config_Fala);
@@ -126,9 +150,10 @@ document.addEventListener("DOMContentLoaded", function(){
         let alt = imagem.alt;
 
         // Speech to text
-        const vozGoogle = window.speechSynthesis.getVoices()[0]
+        const vozGoogle = vozEscolhida;
         const config_Fala = new SpeechSynthesisUtterance(alt);
         config_Fala.voice = vozGoogle;
         window.speechSynthesis.speak(config_Fala);
     })
+}
 });
