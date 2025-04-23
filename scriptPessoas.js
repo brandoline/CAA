@@ -14,12 +14,9 @@ document.addEventListener("DOMContentLoaded", function(){
     
     // Pessoas
     document.getElementById("pessoas").addEventListener("click", function falar() {
-        
-        let pessoas = document.getElementById("pessoas");
-
         // Speech to text
         const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(pessoas);
+        const config_Fala = new SpeechSynthesisUtterance("pessoas");
         config_Fala.voice = vozGoogle;
         window.speechSynthesis.speak(config_Fala);
     })
