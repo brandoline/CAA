@@ -13,14 +13,6 @@ document.addEventListener("DOMContentLoaded", function(){
         console.log(vozEscolhida);
 
     // Sentimentos
-    document.getElementById("sentimentos").addEventListener("click", function falar() {
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance("sentimentos");
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-        
     document.getElementById("feliz").addEventListener("click", function falar() {
         
         let imagem = document.getElementById("feliz");
