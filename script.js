@@ -13,227 +13,78 @@ document.addEventListener("DOMContentLoaded", function(){
         console.log(vozEscolhida);
 
         // Pessoas
-        document.getElementById("eu").addEventListener("click", () => {
-            const imagem = document.getElementById("eu");
-            const texto = imagem.alt;
-        
+        function fala(texto){
             const fala = new SpeechSynthesisUtterance(texto);
             fala.voice = vozEscolhida;
-        
+            window.speechSynthesis.cancel();
             window.speechSynthesis.speak(fala);
-        });
+        }
 
-        document.getElementById("voce").addEventListener("click", () => {
-            const imagem = document.getElementById("voce");
-            const texto = imagem.alt;
-        
-            const fala = new SpeechSynthesisUtterance(texto);
-            fala.voice = vozEscolhida;
-        
-            window.speechSynthesis.speak(fala);
-        });
-
-        document.getElementById("ele").addEventListener("click", () => {
-            const imagem = document.getElementById("ele");
-            const texto = imagem.alt;
-        
-            const fala = new SpeechSynthesisUtterance(texto);
-            fala.voice = vozEscolhida;
-        
-            window.speechSynthesis.speak(fala);
-        });
-
-        // Opniao
-        document.getElementById("sim").addEventListener("click", () => {
-            const imagem = document.getElementById("sim");
-            const texto = imagem.alt;
-        
-            const fala = new SpeechSynthesisUtterance(texto);
-            fala.voice = vozEscolhida;
-        
-            window.speechSynthesis.speak(fala);
-        });
-
-        document.getElementById("nao").addEventListener("click", () => {
-            const imagem = document.getElementById("nao");
-            const texto = imagem.alt;
-        
-            const fala = new SpeechSynthesisUtterance(texto);
-            fala.voice = vozEscolhida;
-        
-            window.speechSynthesis.speak(fala);
-        });
-
-        document.getElementById("mais").addEventListener("click", () => {
-            const imagem = document.getElementById("mais");
-            const texto = imagem.alt;
-        
-            const fala = new SpeechSynthesisUtterance(texto);
-            fala.voice = vozEscolhida;
-        
-            window.speechSynthesis.speak(fala);
-        });
-
-        document.getElementById("da").addEventListener("click", () => {
-            const imagem = document.getElementById("da");
-            const texto = imagem.alt;
-        
-            const fala = new SpeechSynthesisUtterance(texto);
-            fala.voice = vozEscolhida;
-        
-            window.speechSynthesis.speak(fala);
-        });
-
-        document.getElementById("esperar").addEventListener("click", () => {
-            const imagem = document.getElementById("esperar");
-            const texto = imagem.alt;
-        
-            const fala = new SpeechSynthesisUtterance(texto);
-            fala.voice = vozEscolhida;
-        
-            window.speechSynthesis.speak(fala);
-        });
-
-        document.getElementById("quero").addEventListener("click", () => {
-            const imagem = document.getElementById("quero");
-            const texto = imagem.alt;
-        
-            const fala = new SpeechSynthesisUtterance(texto);
-            fala.voice = vozEscolhida;
-        
-            window.speechSynthesis.speak(fala);
-        });
-
-        document.getElementById("pegar").addEventListener("click", () => {
-            const imagem = document.getElementById("pegar");
-            const texto = imagem.alt;
-        
-            const fala = new SpeechSynthesisUtterance(texto);
-            fala.voice = vozEscolhida;
-        
-            window.speechSynthesis.speak(fala);
-        });
-
-        document.getElementById("colocar").addEventListener("click", () => {
-            const imagem = document.getElementById("colocar");
-            const texto = imagem.alt;
-        
-            const fala = new SpeechSynthesisUtterance(texto);
-            fala.voice = vozEscolhida;
-        
-            window.speechSynthesis.speak(fala);
-        });
-
-        document.getElementById("ajuda").addEventListener("click", () => {
-            const imagem = document.getElementById("ajuda");
-            const texto = imagem.alt;
-        
-            const fala = new SpeechSynthesisUtterance(texto);
-            fala.voice = vozEscolhida;
-        
-            window.speechSynthesis.speak(fala);
-        });
-
-        document.getElementById("acabou").addEventListener("click", () => {
-            const imagem = document.getElementById("acabou");
-            const texto = imagem.alt;
-        
-            const fala = new SpeechSynthesisUtterance(texto);
-            fala.voice = vozEscolhida;
-        
-            window.speechSynthesis.speak(fala);
-        });
-
-        // Acoes
-        document.getElementById("comer").addEventListener("click", () => {
-            const imagem = document.getElementById("comer");
-            const texto = imagem.alt;
-        
-            const fala = new SpeechSynthesisUtterance(texto);
-            fala.voice = vozEscolhida;
-        
-            window.speechSynthesis.speak(fala);
-        });
-
-        document.getElementById("dormir").addEventListener("click", () => {
-            const imagem = document.getElementById("dormir");
-            const texto = imagem.alt;
-        
-            const fala = new SpeechSynthesisUtterance(texto);
-            fala.voice = vozEscolhida;
-        
-            window.speechSynthesis.speak(fala);
-        });
-
-        document.getElementById("eu").addEventListener("click", () => {
-            const imagem = document.getElementById("eu");
-            const texto = imagem.alt;
-        
-            const fala = new SpeechSynthesisUtterance(texto);
-            fala.voice = vozEscolhida;
-        
-            window.speechSynthesis.speak(fala);
-        });
-
-        document.getElementById("sentar").addEventListener("click", () => {
-            const imagem = document.getElementById("sentar");
-            const texto = imagem.alt;
-        
-            const fala = new SpeechSynthesisUtterance(texto);
-            fala.voice = vozEscolhida;
-        
-            window.speechSynthesis.speak(fala);
-        });
-
-        document.getElementById("guardar").addEventListener("click", () => {
-            const imagem = document.getElementById("guardar");
-            const texto = imagem.alt;
-        
-            const fala = new SpeechSynthesisUtterance(texto);
-            fala.voice = vozEscolhida;
-        
-            window.speechSynthesis.speak(fala);
-        });
-
-        document.getElementById("trocar").addEventListener("click", () => {
-            const imagem = document.getElementById("trocar");
-            const texto = imagem.alt;
-        
-            const fala = new SpeechSynthesisUtterance(texto);
-            fala.voice = vozEscolhida;
-        
-            window.speechSynthesis.speak(fala);
-        });
-
-        document.getElementById("ir").addEventListener("click", () => {
-            const imagem = document.getElementById("ir");
-            const texto = imagem.alt;
-        
-            const fala = new SpeechSynthesisUtterance(texto);
-            fala.voice = vozEscolhida;
-        
-            window.speechSynthesis.speak(fala);
-        });
-
-    // linha de viagem
-    document.getElementById("sentimentos").addEventListener("click", () => {
-        const imagem = document.getElementById("sentimentos");
-        const texto = imagem.alt;
+        // PESSOAS
+        const imagemEu = document.getElementById("eu").alt;
+        document.getElementById("eu").addEventListener("click", () => fala(imagemEu));
     
-        const fala = new SpeechSynthesisUtterance(texto);
-        fala.voice = vozEscolhida;
+        const imagemVoce = document.getElementById("voce").alt;
+        document.getElementById("voce").addEventListener("click", () => fala(imagemVoce));
     
-        window.speechSynthesis.speak(fala);
-    });
+        const imagemEle = document.getElementById("ele").alt;
+        document.getElementById("ele").addEventListener("click", () => fala(imagemEle));
 
-    document.getElementById("pessoas").addEventListener("click", () => {
-        const imagem = document.getElementById("pessoas");
-        const texto = imagem.alt;
-    
-        const fala = new SpeechSynthesisUtterance(texto);
-        fala.voice = vozEscolhida;
-    
-        window.speechSynthesis.speak(fala);
-    });
-}; 
+
+        // OPNIOES
+        const imagemSim = document.getElementById("sim").alt;
+        document.getElementById("sim").addEventListener("click",  () => fala(imagemSim));
+
+        const imagemNao = document.getElementById("nao").alt;
+        document.getElementById("nao").addEventListener("click", () => fala(imagemNao));
+
+        const imagemMais = document.getElementById("mais").alt;
+        document.getElementById("mais").addEventListener("click", () => fala(imagemMais));
+
+        const imagemDa = document.getElementById("da").alt;
+        document.getElementById("da").addEventListener("click", () => fala(imagemDa));
+
+        const imagemEsperar = document.getElementById("esperar").alt;
+        document.getElementById("esperar").addEventListener("click", () => fala(imagemEsperar));
+
+        const imagemQuero = document.getElementById("quero").alt;
+        document.getElementById("quero").addEventListener("click", () => fala(imagemQuero));
+
+        const imagemPegar = document.getElementById("pegar").alt;
+        document.getElementById("pegar").addEventListener("click", () => fala(imagemPegar));
+
+        const imagemColocar = document.getElementById("colocar").alt;
+        document.getElementById("colocar").addEventListener("click", () => fala(imagemColocar));
+
+        const imagemAjuda = document.getElementById("ajuda").alt;
+        document.getElementById("ajuda").addEventListener("click", () => fala(imagemAjuda));
+        
+        const imagemAcabou = document.getElementById("acabou").alt;
+        document.getElementById("acabou").addEventListener("click", () => fala(imagemAcabou));
+
+        // ACOES
+        const imagemdormir = document.getElementById("dormir").alt;
+        document.getElementById("dormir").addEventListener("click", () => fala(imagemdormir));
+
+        const imagemBrincar = document.getElementById("brincar").alt;
+        document.getElementById("brincar").addEventListener("click", () => fala(imagemBrincar));
+
+        const imagemSentar = document.getElementById("sentar").alt;
+        document.getElementById("sentar").addEventListener("click", () => fala(imagemSentar));
+
+        const imagemGuardar = document.getElementById("guardar").alt;
+        document.getElementById("guardar").addEventListener("click", () => fala(imagemGuardar));
+
+        const imagemTrocar = document.getElementById("trocar").alt;
+        document.getElementById("trocar").addEventListener("click", () => fala(imagemTrocar));
+
+        const imagemIr = document.getElementById("ir").alt;
+        document.getElementById("ir").addEventListener("click", () => fala(imagemIr));
+
+        const imagemSentimentos = document.getElementById("sentimentos").alt;
+        document.getElementById("sentimentos").addEventListener("click", () => fala(imagemSentimentos));
+
+        const imagemPessoas = document.getElementById("pessoas").alt;
+        document.getElementById("pessoas").addEventListener("click", () => fala(imagemPessoas));
+    };
 });
