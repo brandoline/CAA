@@ -13,271 +13,227 @@ document.addEventListener("DOMContentLoaded", function(){
         console.log(vozEscolhida);
 
         // Pessoas
-        document.getElementById("eu").addEventListener("click", function falar() {
-            
-            let imagem = document.getElementById("eu");
-            let alt = imagem.alt;
-    
-            // Speech to text
-            const vozGoogle = vozEscolhida;
-            const config_Fala = new SpeechSynthesisUtterance(alt);
-            config_Fala.voice = vozGoogle;
-            window.speechSynthesis.speak(config_Fala);
-        })
-
-        document.getElementById("voce").addEventListener("click", function falar() {
+        document.getElementById("eu").addEventListener("click", () => {
+            const imagem = document.getElementById("eu");
+            const texto = imagem.alt;
         
-        let imagem = document.getElementById("voce");
-        let alt = imagem.alt;
-
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-
-        document.getElementById("ele").addEventListener("click", function falar() {
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
         
-        let imagem = document.getElementById("ele");
-        let alt = imagem.alt;
+            window.speechSynthesis.speak(fala);
+        });
 
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
+        document.getElementById("voce").addEventListener("click", () => {
+            const imagem = document.getElementById("voce");
+            const texto = imagem.alt;
+        
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
+        
+            window.speechSynthesis.speak(fala);
+        });
+
+        document.getElementById("ele").addEventListener("click", () => {
+            const imagem = document.getElementById("ele");
+            const texto = imagem.alt;
+        
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
+        
+            window.speechSynthesis.speak(fala);
+        });
 
         // Opniao
-        document.getElementById("sim").addEventListener("click", function falar() {
+        document.getElementById("sim").addEventListener("click", () => {
+            const imagem = document.getElementById("sim");
+            const texto = imagem.alt;
         
-        let imagem = document.getElementById("sim");
-        let alt = imagem.alt;
-
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-
-        document.getElementById("nao").addEventListener("click", function falar() {
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
         
-        let imagem = document.getElementById("nao");
-        let alt = imagem.alt;
+            window.speechSynthesis.speak(fala);
+        });
 
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-
-        document.getElementById("mais").addEventListener("click", function falar() {
+        document.getElementById("nao").addEventListener("click", () => {
+            const imagem = document.getElementById("nao");
+            const texto = imagem.alt;
         
-        let imagem = document.getElementById("mais");
-        let alt = imagem.alt;
-
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-
-        document.getElementById("da").addEventListener("click", function falar() {
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
         
-        let imagem = document.getElementById("da");
-        let alt = imagem.alt;
+            window.speechSynthesis.speak(fala);
+        });
 
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-
-        document.getElementById("esperar").addEventListener("click", function falar() {
+        document.getElementById("mais").addEventListener("click", () => {
+            const imagem = document.getElementById("mais");
+            const texto = imagem.alt;
         
-        let imagem = document.getElementById("esperar");
-        let alt = imagem.alt;
-
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-
-        document.getElementById("quero").addEventListener("click", function falar() {
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
         
-        let imagem = document.getElementById("quero");
-        let alt = imagem.alt;
+            window.speechSynthesis.speak(fala);
+        });
 
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-
-        document.getElementById("pegar").addEventListener("click", function falar() {
+        document.getElementById("da").addEventListener("click", () => {
+            const imagem = document.getElementById("da");
+            const texto = imagem.alt;
         
-        let imagem = document.getElementById("pegar");
-        let alt = imagem.alt;
-
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-
-        document.getElementById("colocar").addEventListener("click", function falar() {
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
         
-        let imagem = document.getElementById("colocar");
-        let alt = imagem.alt;
+            window.speechSynthesis.speak(fala);
+        });
 
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-
-        document.getElementById("ajuda").addEventListener("click", function falar() {
+        document.getElementById("esperar").addEventListener("click", () => {
+            const imagem = document.getElementById("esperar");
+            const texto = imagem.alt;
         
-        let imagem = document.getElementById("ajuda");
-        let alt = imagem.alt;
-
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-
-        document.getElementById("acabou").addEventListener("click", function falar() {
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
         
-        let imagem = document.getElementById("acabou");
-        let alt = imagem.alt;
+            window.speechSynthesis.speak(fala);
+        });
 
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
+        document.getElementById("quero").addEventListener("click", () => {
+            const imagem = document.getElementById("quero");
+            const texto = imagem.alt;
+        
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
+        
+            window.speechSynthesis.speak(fala);
+        });
+
+        document.getElementById("pegar").addEventListener("click", () => {
+            const imagem = document.getElementById("pegar");
+            const texto = imagem.alt;
+        
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
+        
+            window.speechSynthesis.speak(fala);
+        });
+
+        document.getElementById("colocar").addEventListener("click", () => {
+            const imagem = document.getElementById("colocar");
+            const texto = imagem.alt;
+        
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
+        
+            window.speechSynthesis.speak(fala);
+        });
+
+        document.getElementById("ajuda").addEventListener("click", () => {
+            const imagem = document.getElementById("ajuda");
+            const texto = imagem.alt;
+        
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
+        
+            window.speechSynthesis.speak(fala);
+        });
+
+        document.getElementById("acabou").addEventListener("click", () => {
+            const imagem = document.getElementById("acabou");
+            const texto = imagem.alt;
+        
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
+        
+            window.speechSynthesis.speak(fala);
+        });
 
         // Acoes
-        document.getElementById("comer").addEventListener("click", function falar() {
+        document.getElementById("comer").addEventListener("click", () => {
+            const imagem = document.getElementById("comer");
+            const texto = imagem.alt;
         
-        let imagem = document.getElementById("comer");
-        let alt = imagem.alt;
-
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-
-        document.getElementById("dormir").addEventListener("click", function falar() {
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
         
-        let imagem = document.getElementById("dormir");
-        let alt = imagem.alt;
+            window.speechSynthesis.speak(fala);
+        });
 
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-
-        document.getElementById("brincar").addEventListener("click", function falar() {
+        document.getElementById("dormir").addEventListener("click", () => {
+            const imagem = document.getElementById("dormir");
+            const texto = imagem.alt;
         
-        let imagem = document.getElementById("brincar");
-        let alt = imagem.alt;
-
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-
-        document.getElementById("sentar").addEventListener("click", function falar() {
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
         
-        let imagem = document.getElementById("sentar");
-        let alt = imagem.alt;
+            window.speechSynthesis.speak(fala);
+        });
 
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-
-        document.getElementById("guardar").addEventListener("click", function falar() {
+        document.getElementById("eu").addEventListener("click", () => {
+            const imagem = document.getElementById("eu");
+            const texto = imagem.alt;
         
-        let imagem = document.getElementById("guardar");
-        let alt = imagem.alt;
-
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-
-        document.getElementById("trocar").addEventListener("click", function falar() {
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
         
-        let imagem = document.getElementById("trocar");
-        let alt = imagem.alt;
+            window.speechSynthesis.speak(fala);
+        });
 
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-
-        document.getElementById("ir").addEventListener("click", function falar() {
+        document.getElementById("sentar").addEventListener("click", () => {
+            const imagem = document.getElementById("sentar");
+            const texto = imagem.alt;
         
-        let imagem = document.getElementById("ir");
-        let alt = imagem.alt;
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
+        
+            window.speechSynthesis.speak(fala);
+        });
 
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
+        document.getElementById("guardar").addEventListener("click", () => {
+            const imagem = document.getElementById("guardar");
+            const texto = imagem.alt;
+        
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
+        
+            window.speechSynthesis.speak(fala);
+        });
+
+        document.getElementById("trocar").addEventListener("click", () => {
+            const imagem = document.getElementById("trocar");
+            const texto = imagem.alt;
+        
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
+        
+            window.speechSynthesis.speak(fala);
+        });
+
+        document.getElementById("ir").addEventListener("click", () => {
+            const imagem = document.getElementById("ir");
+            const texto = imagem.alt;
+        
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.voice = vozEscolhida;
+        
+            window.speechSynthesis.speak(fala);
+        });
 
     // linha de viagem
-        document.getElementById("sentimentos").addEventListener("click", function falar() {
-        
-        let imagem = document.getElementById("sentimentos");
-        let alt = imagem.alt;
+    document.getElementById("sentimentos").addEventListener("click", () => {
+        const imagem = document.getElementById("sentimentos");
+        const texto = imagem.alt;
+    
+        const fala = new SpeechSynthesisUtterance(texto);
+        fala.voice = vozEscolhida;
+    
+        window.speechSynthesis.speak(fala);
+    });
 
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-
-        document.getElementById("pessoas").addEventListener("click", function falar() {
-        
-        let imagem = document.getElementById("pessoas");
-        let alt = imagem.alt;
-
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
+    document.getElementById("pessoas").addEventListener("click", () => {
+        const imagem = document.getElementById("pessoas");
+        const texto = imagem.alt;
+    
+        const fala = new SpeechSynthesisUtterance(texto);
+        fala.voice = vozEscolhida;
+    
+        window.speechSynthesis.speak(fala);
+    });
 }; 
 });
