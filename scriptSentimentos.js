@@ -13,64 +13,64 @@ document.addEventListener("DOMContentLoaded", function(){
         console.log(vozEscolhida);
 
     // Sentimentos
-    document.getElementById("feliz").addEventListener("click", function falar() {
-        
-        let imagem = document.getElementById("feliz");
-        let alt = imagem.alt;
+    document.getElementById("sentimentos").addEventListener("click", () => {
+        const imagem = document.getElementById("sentimentos");
+        const texto = imagem.alt;
+    
+        const fala = new SpeechSynthesisUtterance(texto);
+        fala.voice = vozEscolhida;
+    
+        window.speechSynthesis.speak(fala);
+    });
 
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
+    document.getElementById("feliz").addEventListener("click", () => {
+        const imagem = document.getElementById("feliz");
+        const texto = imagem.alt;
+    
+        const fala = new SpeechSynthesisUtterance(texto);
+        fala.voice = vozEscolhida;
+    
+        window.speechSynthesis.speak(fala);
+    });
 
-    document.getElementById("triste").addEventListener("click", function falar() {
-        
-        let imagem = document.getElementById("triste");
-        let alt = imagem.alt;
+    document.getElementById("triste").addEventListener("click", () => {
+        const imagem = document.getElementById("triste");
+        const texto = imagem.alt;
+    
+        const fala = new SpeechSynthesisUtterance(texto);
+        fala.voice = vozEscolhida;
+    
+        window.speechSynthesis.speak(fala);
+    });
 
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
+    document.getElementById("raiva").addEventListener("click", () => {
+        const imagem = document.getElementById("raiva");
+        const texto = imagem.alt;
+    
+        const fala = new SpeechSynthesisUtterance(texto);
+        fala.voice = vozEscolhida;
+    
+        window.speechSynthesis.speak(fala);
+    });
 
-    document.getElementById("raiva").addEventListener("click", function falar() {
-        
-        let imagem = document.getElementById("raiva");
-        let alt = imagem.alt;
+    document.getElementById("medo").addEventListener("click", () => {
+        const imagem = document.getElementById("medo");
+        const texto = imagem.alt;
+    
+        const fala = new SpeechSynthesisUtterance(texto);
+        fala.voice = vozEscolhida;
+    
+        window.speechSynthesis.speak(fala);
+    });
 
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-
-    document.getElementById("medo").addEventListener("click", function falar() {
-        
-        let imagem = document.getElementById("medo");
-        let alt = imagem.alt;
-
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
-
-    document.getElementById("nojo").addEventListener("click", function falar() {
-        
-        let imagem = document.getElementById("nojo");
-        let alt = imagem.alt;
-
-        // Speech to text
-        const vozGoogle = vozEscolhida;
-        const config_Fala = new SpeechSynthesisUtterance(alt);
-        config_Fala.voice = vozGoogle;
-        window.speechSynthesis.speak(config_Fala);
-    })
+    document.getElementById("nojo").addEventListener("click", () => {
+        const imagem = document.getElementById("nojo");
+        const texto = imagem.alt;
+    
+        const fala = new SpeechSynthesisUtterance(texto);
+        fala.voice = vozEscolhida;
+    
+        window.speechSynthesis.speak(fala);
+    });
 }
 });
